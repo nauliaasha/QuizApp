@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Public+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <app-bar></app-bar>
+    <div class="container text-center custom-box home-box">
+        <div class="card">
+            <div class="card-body">
+                <h4>Instruction</h4>
+                <p>Total number of questions :<span class="total-question"> </span></p>
+                <button class="btn btn-dark" type="button" onclick="startQuiz()">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+    <div class="container p-3 my-3 custom-box quiz-box hide">
+        <div class="card">
+            <div class="card-body">
+                <div class="question-number border-bottom"></div>
+                <div class="question-text mt-3"></div>
+                <div class="options-container">
+    
+                </div>
+                <div class="next-question-btn">
+                    <button type="button" class="btn btn-dark" onclick="next()">Next</button>
+                </div>
+                <div class="answers-indicator border-top pt-1">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-3 my-3 custom-box result-box text-center hide">
+        <div class="card">
+            <div class="card-body">
+                <h4>Quiz Result</h4>
+                <table>
+                    <tr>
+                        <td>Total Question</td>
+                        <td><span class="total-question"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Correct</td>
+                        <td><span class="total-correct"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wrong</td>
+                        <td><span class="total-wrong"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td><span class="total-percentage"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Score</td>
+                        <td><span class="total-score"></span></td>
+                    </tr>
+                </table>
+                <button class="btn btn-dark" type="button" onclick="tryAgain()">Try Again</button>
+                <button class="btn btn-dark" type="button" onclick="home()">Home</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./src/component/app-bar.js"></script>
+    <script src="./data/quizzes.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+</html>

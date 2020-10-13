@@ -1,0 +1,26 @@
+.result-box h4{ 
+    margin-bottom: 2rem;
+}
+
+.result-box table {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.result-box table td {
+    border: 1px solid;
+    padding: 0.5rem;
+    font-weight: 500;
+    width: 50%;
+}
+
+.result-box .btn {
+    margin: auto 6rem;
+}
+
+@media (max-width: 700px) {
+    .result-box .btn {
+        margin-bottom: 1rem;
+    }
+}

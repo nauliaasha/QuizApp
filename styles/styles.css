@@ -1,0 +1,17 @@
+@import "./custombox.css";
+@import "./quizbox.css";
+@import "./resultbox.css";
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    color: #343a40;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
